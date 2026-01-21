@@ -83,18 +83,18 @@ def get_available_scripts(language):
     scripts = {
         'vi': [
             {"name": "1. Tự động Actions (Login X)", "value": "active", "locked": True},
-            {"name": "2. Tự động hoàn thành nhiệm vụ Daily Check-in", "value": "checkin", "locked": True},
+            {"name": "2. Tự động hoàn thành nhiệm vụ Daily Check-in", "value": "checkin"},
             {"name": "3. Tự động hoàn thành nhiệm vụ Community", "value": "community", "locked": True},          
-            {"name": "4. Tự động hoàn thành nhiệm vụ Discord Roles (Login Discord)", "value": "discord"},
+            {"name": "4. Tự động hoàn thành nhiệm vụ Discord Roles (Login Discord)", "value": "discord", "locked": True},
 
             
             {"name": "X. Thoát", "value": "exit"},
         ],
         'en': [
             {"name": "1. Automatic Actions (Login X)", "value": "active", "locked": True},
-            {"name": "2. Automatic task Daily Check-in", "value": "checkin", "locked": True},
+            {"name": "2. Automatic task Daily Check-in", "value": "checkin"},
             {"name": "3. Automatic task Community", "value": "community", "locked": True},
-            {"name": "4. Automatic task Discord Roles (Login Discord)", "discord": "discord"},
+            {"name": "4. Automatic task Discord Roles (Login Discord)", "discord": "discord", "locked": True},
 
 
             {"name": "X. Thoát", "value": "exit"},
@@ -208,6 +208,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
